@@ -1,0 +1,502 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman';
+    }
+    .main{
+      overflow: hidden;
+
+    }
+    .header1{
+      display: flex;
+      height: 50px;
+      border-radius: 0;
+      background-color: rgb(40, 38, 38);
+      /* padding: 15px; */
+      padding-left: 100px;
+      color: white;
+      font-size: 15px;
+    }
+    p{
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .img1{
+      height: 30px;
+    }
+    .navbar{
+      display: flex;
+      height: 50%;
+    
+    }
+    .hamburger{
+        display: none;
+        font-size: 25px;
+    }
+    .navbar-nav{
+      display: flex;
+      list-style: none;
+      margin-top: 30px;
+      font-size: 17px;
+      margin-left: 200px;
+      text-decoration: none;
+    }
+    .navbar-nav:hover{
+      text-decoration: none;
+    }
+    li{
+      margin-left: 40px;
+      color: black;
+
+    }
+   
+    .navbar-nav i{
+        margin-right: 10px;
+        color: rgb(23, 131, 213);
+
+    }
+    .header1 i{
+        margin-right: 10px;
+        color: rgb(23, 131, 213);
+    }
+
+    .img2{
+      margin-left: 200px;
+      margin-top: 20px;
+      height: 40px;
+      width: 200px;
+    }
+    .head-button{
+      
+      margin-top: 10px;
+      padding-right: 20px;
+      margin-left: 500px;
+    }
+    button{
+      background-color: rgb(28, 154, 222);
+      border-color:rgb(28, 154, 222);
+      font-size: 17px;
+      padding-left: 5px;
+      padding-right: 10px;
+      margin-left: 10px;
+    }
+    .carousel-indicators{
+      margin-left: 10%;
+      margin-top: 0;
+      
+    }
+    /* .active{
+        background-color: red;
+    } */
+
+
+
+/* About QuantumWare */
+.about_main{
+    margin-top: 30px;
+}
+.about_main hr{
+    width: 50px;
+    border:1px solid #116fce;
+    margin-top: 40px;
+}
+.heading1{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    background: linear-gradient(to bottom,#0099FF,#003366);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    
+}
+.mid{
+    margin-top: 140px;
+}
+.quant{
+    margin-top: 40px;
+    margin-bottom: 0;
+    
+}
+.about, .quant{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+.about:hover , .quant:hover{
+    color: black;
+}
+.about{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 0;
+
+}
+
+.about_button{
+    background: linear-gradient(to right,#0a9dff,#003366);
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman';
+    border: none;
+    margin-left: 30px;
+    margin-top: 10px;
+
+
+    
+}
+.img-responsive{
+    box-shadow: 5px 5px 5px rgba(135, 165, 189, 0.5);
+
+}
+
+
+/* Our Services */
+
+.our_main{
+    margin-top: 50px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background: linear-gradient(to bottom,#0099FF,#003366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+h3{
+    color: rgb(90, 163, 192);
+    font-family: 'Times New Roman', Times, serif;
+}
+.hrl{
+    width: 50px;
+    border: 1px solid black;
+    border-color: rgb(19, 131, 222);
+
+}
+.thumb2{
+margin-top: 20px;
+}
+.thumbnail{
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right: 1px solid rgb(14, 15, 15);
+    transition: border 0.5s ease-in-out;
+    /* margin-bottom: 40px; */
+
+}
+.thumbnail::before, .thumbnail::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: rgb(90, 163, 192); /* Change to your desired color */
+    transition: width 0.5s;
+}
+
+.thumbnail::before {
+    bottom: 0;
+    right: 0;
+    transition: width 0.5s ease-in-out 0.25s; /* Delay to sync with hover */
+}
+
+.thumbnail::after {
+    
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out 0.25s; /* Delay to sync with hover */
+}
+
+.thumbnail:hover::before, .thumbnail:hover::after {
+    width: 100%;
+}
+
+/* Top and bottom borders */
+.thumbnail:hover::before {
+    transition: width 0.5s ease-in-out;
+}
+
+.thumbnail:hover::after {
+    transition: width 0.5s ease-in-out;
+}
+
+/* Left and right borders */
+.thumbnail:hover {
+    border: 1px solid rgb(90, 163, 192);
+    animation: moveBorder 1s infinite alternate;
+}
+
+@keyframes moveBorder {
+    0% {
+        border-left-color: rgb(90, 163, 192);
+        border-right-color: transparent;
+    }
+    50% {
+        border-left-color: transparent;
+        border-right-color: rgb(90, 163, 192);
+    }
+    100% {
+        border-left-color: rgb(90, 163, 192);
+        border-right-color: transparent;
+    }
+}
+
+.thumbnail h3, .thumbnail p {
+    margin: 10px 0;
+}
+.thumbnail p{
+    font-size: 15px;
+}
+
+
+/* our clients */
+
+
+.inner1{
+    padding: 20px;
+    border: 2px dotted #337ab7;
+}
+
+.glyphicon{
+    color: #157ba7;
+}
+
+/* Testimonials */
+
+.item-container {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Adjust the background color if needed */
+    padding: 20px; /* Add padding to position the image */
+}
+.cap{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.img-circle {
+    width: 80px; /* Set the width of the image */
+    height: 80px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+/* footer */
+.follow p{
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 18px;
+}
+.follow h3{
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 18px;
+}
+.follow h4{
+    color: rgba(255, 255, 255, 0.612);
+    /* font-size: 18px; */
+
+}
+.follow a,i,label{
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 18px;
+
+}
+.follow p:hover, h4:hover, a:hover, i:hover{
+    color: white;
+    text-decoration: none;
+}
+.icon {
+    justify-content: center;
+    padding: 7px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px; 
+    color: #1250d7; 
+    border: 1px solid blue;
+}
+.fa-instagram{
+    border-color: rgb(227, 11, 130);
+    color: rgb(227, 11, 130);
+}
+.fa-youtube{
+    border-color: red;
+    color: red;
+}
+.fa-map-marker{
+    border-color: red;
+    color: red;
+}
+.follow .fa-envelope{
+    border-color: rgb(231, 10, 224);
+    color: rgb(231, 10, 224);
+}
+
+.footer{
+    background-color: black;
+    margin-top: 40px;
+}
+.foot_heading{
+    color: rgba(255, 255, 255, 0.612);
+}
+.foot .fa{
+    height: 100px;
+    width: 100px;
+    
+}
+.follow button{
+    height: fit-content;
+    /* margin-right: 4px; */
+    margin-left: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color:  rgba(255, 255, 255, 0.612);
+}
+
+/* modal page  */
+
+.main_modal{
+    width: 100%;
+  }
+  .modal{
+    width: 100%;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+
+  }
+  .modal-dialog{
+    width: 100%;
+
+  }
+   .modal-content{
+    width: 1100px;
+    padding: 0;
+    border-radius: 0;
+   }
+   span{
+    margin-right: 10px;
+    font-size: 30px;
+   }
+   .modal-body{
+    padding: 0;
+    margin-left: 0px;
+   }
+   
+   .modal-body h2{
+    margin-top: 70px;
+    font-size: 35px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .modal p{
+    font-size: 17px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .images-paragraph{
+    margin-top: 10%;
+   }
+   .images-paragraph p{
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 70px;
+   }
+   .images-paragraph img{
+    margin-top: 0;
+    margin-right: 0;
+   }
+
+   .input-field img{
+    width: 40px;
+    margin-bottom: 5px;
+   }
+   .input-field input,select{
+    width: 220px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid rgb(203, 199, 199);
+
+   }
+   .input-field select{
+    height: 40px;
+    width: 220px;
+   }
+   
+   .input-field{
+    margin-top: 50px;
+    margin-bottom: 20px;
+   }
+   .main-field{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+   .ssl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   .ssl img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+
+   }
+   .ssl h3{
+    padding: 0;
+    font-size: 18px;
+   }
+   .ssl p{
+    color: rgb(151, 147, 147);
+    font-size: 14px;
+   }
+   .ssl button{
+    margin-right: 0;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    background-color: transparent;
+    border-color: rgb(0, 140, 255);
+   }
+   .ssl p:hover{
+    color: black;
+   }
+   .ssl button:hover{
+    background-color: black;
+    color: white;
+   }
+
+
+@media (max-width: 768px) {
+    .navbar-content {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-content.active {
+      display: flex;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-nav a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #444;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
